@@ -28,9 +28,9 @@ public class CowsayController {
             if (!infelicities.contains(f)) {
                 c.add(f);
             }
-        });*/
+        });
         cowfiles = Collections.unmodifiableList(c);
-    }
+*/    }
 
     /**
      * Return cowsay's 'say' message.
