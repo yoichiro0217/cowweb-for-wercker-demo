@@ -57,6 +57,7 @@ deploy-to-cluster:
         server: $KUBERNETES_MASTER
 #        token: $KUBERNETES_TOKEN
         username: $KUBERNETES_USER
+        password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
         command: get nodes
 
