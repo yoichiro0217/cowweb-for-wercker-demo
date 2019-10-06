@@ -56,10 +56,11 @@ deploy-to-cluster:
         name: connection testing
         server: $KUBERNETES_MASTER
         token: $KUBERNETES_TOKEN
-##        username: $KUBERNETES_USER
+#        username: $KUBERNETES_USER
 #        password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
-        command: get nodes -n default
+#        command: get nodes
+        command: get pods
 
     - kubectl:
         name: delete objects
