@@ -55,7 +55,7 @@ deploy-to-cluster:
     - kubectl:
         name: connection testing
         server: $KUBERNETES_MASTER
-#        token: $KUBERNETES_TOKEN
+        token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
         command: get nodes
 
