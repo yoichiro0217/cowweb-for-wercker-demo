@@ -60,7 +60,6 @@ deploy-to-cluster:
 #        password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
         command: get nodes
-##        command: get pods
 
     - kubectl:
         name: delete objects
