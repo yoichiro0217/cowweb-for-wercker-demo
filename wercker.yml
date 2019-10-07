@@ -59,7 +59,7 @@ deploy-to-cluster:
 #        username: $KUBERNETES_USER
 #        password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
-        command: get nodes
+        command: get nodes --namespace=$COWWEB_NAMESPACE
 #        command: get pods
 
     - kubectl:
