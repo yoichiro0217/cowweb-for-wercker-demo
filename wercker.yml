@@ -42,7 +42,7 @@ push-to-releases:
     - internal/docker-push:
         username: $REGISTRY_USERNAME
         password: $REGISTRY_PASSWORD
-        repository: nrt.ocir.io/nrmqwdyo5w30/handson-001/cowweb
+        repository: nrt.ocir.io/nrod7znjh7hd/handson-001/cowweb
         tag: v1.0
         ports: 8080
         cmd: java -jar /pipeline/source/build/libs/cowweb-1.0.jar
