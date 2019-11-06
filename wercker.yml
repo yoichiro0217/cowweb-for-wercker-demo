@@ -83,3 +83,4 @@ deploy-to-cluster:
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
         command: get service -o jsonpath='{.items[*].status.loadBalancer.ingress[*].ip}' --namespace=$COWWEB_NAMESPACE
+        
